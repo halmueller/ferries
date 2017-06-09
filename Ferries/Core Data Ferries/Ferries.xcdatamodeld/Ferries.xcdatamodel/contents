@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Detail" representedClassName="Detail" syncable="YES">
+        <attribute name="drawingURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lengthFeetInches" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vessel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vessel" inverseName="detail" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="FerryClass" representedClassName="FerryClass" syncable="YES">
+        <attribute name="classID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drawingImgURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ferryClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="silhouetteImgURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vessels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vessel" inverseName="ferryClass" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="PositionReport" representedClassName="PositionReport" syncable="YES">
+        <attribute name="heading" optional="YES" attributeType="Double" minValueString="0" maxValueString="360" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" minValueString="-90" maxValueString="90" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" minValueString="-180" maxValueString="180" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="vessel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vessel" inverseName="positionReports" inverseEntity="Vessel" syncable="YES"/>
+    </entity>
+    <entity name="Vessel" representedClassName="Vessel" syncable="YES">
+        <attribute name="abbreviatedName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="positionUpdateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vesselID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="detail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Detail" inverseName="vessel" inverseEntity="Detail" syncable="YES"/>
+        <relationship name="ferryClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FerryClass" inverseName="vessels" inverseEntity="FerryClass" syncable="YES"/>
+        <relationship name="positionReports" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PositionReport" inverseName="vessel" inverseEntity="PositionReport" syncable="YES"/>
+    </entity>
+    <fetchRequest name="ferryClassWithClassID" entity="FerryClass" predicateString="classID == $requestedID"/>
+    <fetchRequest name="positionReportsWithVesselIDAndTimestamp" entity="PositionReport" predicateString="vessel.vesselID == $vesselID AND timestamp == $timestamp"/>
+    <fetchRequest name="vesselsWithVesselID" entity="Vessel" predicateString="vesselID == $requestedID"/>
+    <elements>
+        <element name="Detail" positionX="-288" positionY="-18" width="128" height="120"/>
+        <element name="FerryClass" positionX="169" positionY="-36" width="128" height="120"/>
+        <element name="PositionReport" positionX="-9" positionY="144" width="128" height="135"/>
+        <element name="Vessel" positionX="-27" positionY="-108" width="128" height="180"/>
+    </elements>
+</model>

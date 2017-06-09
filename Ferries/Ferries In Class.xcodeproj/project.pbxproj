@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20266D091ECD38CA0045D5AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D081ECD38CA0045D5AB /* AppDelegate.swift */; };
+		20266D101ECD38CA0045D5AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20266D0E1ECD38CA0045D5AB /* Main.storyboard */; };
+		20266D121ECD38CA0045D5AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20266D111ECD38CA0045D5AB /* Assets.xcassets */; };
+		20266D151ECD38CA0045D5AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20266D131ECD38CA0045D5AB /* LaunchScreen.storyboard */; };
+		20266D201ECD38CB0045D5AB /* Ferries_In_ClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D1F1ECD38CB0045D5AB /* Ferries_In_ClassTests.swift */; };
+		20266D2B1ECD38CB0045D5AB /* Ferries_In_ClassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D2A1ECD38CB0045D5AB /* Ferries_In_ClassUITests.swift */; };
+		20266D3A1ECD39590045D5AB /* Ferries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20266D381ECD39590045D5AB /* Ferries.xcdatamodeld */; };
+		20266D431ECD42380045D5AB /* FerryClass+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D3B1ECD42380045D5AB /* FerryClass+CoreDataClass.swift */; };
+		20266D451ECD42380045D5AB /* Vessel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D3D1ECD42380045D5AB /* Vessel+CoreDataClass.swift */; };
+		20266D461ECD42380045D5AB /* Vessel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D3E1ECD42380045D5AB /* Vessel+CoreDataProperties.swift */; };
+		20266D471ECD42380045D5AB /* PositionReport+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D3F1ECD42380045D5AB /* PositionReport+CoreDataClass.swift */; };
+		20266D481ECD42380045D5AB /* PositionReport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D401ECD42380045D5AB /* PositionReport+CoreDataProperties.swift */; };
+		20266D491ECD42380045D5AB /* Detail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D411ECD42380045D5AB /* Detail+CoreDataClass.swift */; };
+		20266D4A1ECD42380045D5AB /* Detail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D421ECD42380045D5AB /* Detail+CoreDataProperties.swift */; };
+		20266D4D1ECD48A40045D5AB /* FerriesCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D4C1ECD48A40045D5AB /* FerriesCoreDataStack.swift */; };
+		20266D511ECD4D1C0045D5AB /* VesselsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D501ECD4D1C0045D5AB /* VesselsTableViewController.swift */; };
+		20266D531ECD512A0045D5AB /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D521ECD512A0045D5AB /* DebugViewController.swift */; };
+		20266D571ED678380045D5AB /* Vessel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D561ED678380045D5AB /* Vessel.swift */; };
+		20266D591ED6AF090045D5AB /* FerryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20266D581ED6AF090045D5AB /* FerryClass.swift */; };
+		2084A5F91EDEA6260085CF2D /* VesselAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084A5F81EDEA6260085CF2D /* VesselAnnotation.swift */; };
+		20C89D3A1ED6C59900ABA0D5 /* FerryClass+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C89D391ED6C59800ABA0D5 /* FerryClass+CoreDataProperties.swift */; };
+		20C89D3C1ED6CADE00ABA0D5 /* PositionReportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C89D3B1ED6CADE00ABA0D5 /* PositionReportsTableViewController.swift */; };
+		20C89D3E1ED7E86C00ABA0D5 /* SectionedVesselsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C89D3D1ED7E86C00ABA0D5 /* SectionedVesselsTableViewController.swift */; };
+		20C89D401ED7F0FE00ABA0D5 /* FerriesMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C89D3F1ED7F0FE00ABA0D5 /* FerriesMapController.swift */; };
+		20C89D421EDE6ED900ABA0D5 /* FerryClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C89D411EDE6ED900ABA0D5 /* FerryClassesTableViewController.swift */; };
+		20C89D481EDE8B2500ABA0D5 /* PositionReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C89D471EDE8B2500ABA0D5 /* PositionReport.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20266D1C1ECD38CB0045D5AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20266CFD1ECD38CA0045D5AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20266D041ECD38CA0045D5AB;
+			remoteInfo = "Ferries In Class";
+		};
+		20266D271ECD38CB0045D5AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20266CFD1ECD38CA0045D5AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20266D041ECD38CA0045D5AB;
+			remoteInfo = "Ferries In Class";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20266D051ECD38CA0045D5AB /* Ferries In Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ferries In Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20266D081ECD38CA0045D5AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20266D0F1ECD38CA0045D5AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20266D111ECD38CA0045D5AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20266D141ECD38CA0045D5AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20266D161ECD38CA0045D5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20266D1B1ECD38CB0045D5AB /* Ferries In ClassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ferries In ClassTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20266D1F1ECD38CB0045D5AB /* Ferries_In_ClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ferries_In_ClassTests.swift; sourceTree = "<group>"; };
+		20266D211ECD38CB0045D5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20266D261ECD38CB0045D5AB /* Ferries In ClassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ferries In ClassUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20266D2A1ECD38CB0045D5AB /* Ferries_In_ClassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ferries_In_ClassUITests.swift; sourceTree = "<group>"; };
+		20266D2C1ECD38CB0045D5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20266D391ECD39590045D5AB /* Ferries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ferries.xcdatamodel; sourceTree = "<group>"; };
+		20266D3B1ECD42380045D5AB /* FerryClass+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FerryClass+CoreDataClass.swift"; path = "Core Data Ferries/FerryClass+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20266D3D1ECD42380045D5AB /* Vessel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Vessel+CoreDataClass.swift"; path = "Core Data Ferries/Vessel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20266D3E1ECD42380045D5AB /* Vessel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Vessel+CoreDataProperties.swift"; path = "Core Data Ferries/Vessel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20266D3F1ECD42380045D5AB /* PositionReport+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositionReport+CoreDataClass.swift"; path = "Core Data Ferries/PositionReport+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20266D401ECD42380045D5AB /* PositionReport+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositionReport+CoreDataProperties.swift"; path = "Core Data Ferries/PositionReport+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20266D411ECD42380045D5AB /* Detail+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Detail+CoreDataClass.swift"; path = "Core Data Ferries/Detail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20266D421ECD42380045D5AB /* Detail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Detail+CoreDataProperties.swift"; path = "Core Data Ferries/Detail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20266D4C1ECD48A40045D5AB /* FerriesCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FerriesCoreDataStack.swift; path = "Core Data Ferries/FerriesCoreDataStack.swift"; sourceTree = "<group>"; };
+		20266D501ECD4D1C0045D5AB /* VesselsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VesselsTableViewController.swift; sourceTree = "<group>"; };
+		20266D521ECD512A0045D5AB /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		20266D561ED678380045D5AB /* Vessel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vessel.swift; path = "Core Data Ferries/Vessel.swift"; sourceTree = "<group>"; };
+		20266D581ED6AF090045D5AB /* FerryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FerryClass.swift; path = "Core Data Ferries/FerryClass.swift"; sourceTree = "<group>"; };
+		2084A5F81EDEA6260085CF2D /* VesselAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VesselAnnotation.swift; sourceTree = "<group>"; };
+		20C89D391ED6C59800ABA0D5 /* FerryClass+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FerryClass+CoreDataProperties.swift"; path = "Core Data Ferries/FerryClass+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20C89D3B1ED6CADE00ABA0D5 /* PositionReportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionReportsTableViewController.swift; sourceTree = "<group>"; };
+		20C89D3D1ED7E86C00ABA0D5 /* SectionedVesselsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionedVesselsTableViewController.swift; sourceTree = "<group>"; };
+		20C89D3F1ED7F0FE00ABA0D5 /* FerriesMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerriesMapController.swift; sourceTree = "<group>"; };
+		20C89D411EDE6ED900ABA0D5 /* FerryClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerryClassesTableViewController.swift; sourceTree = "<group>"; };
+		20C89D471EDE8B2500ABA0D5 /* PositionReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionReport.swift; path = "Core Data Ferries/PositionReport.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20266D021ECD38CA0045D5AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20266D181ECD38CB0045D5AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20266D231ECD38CB0045D5AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20266CFC1ECD38CA0045D5AB = {
+			isa = PBXGroup;
+			children = (
+				20266D4B1ECD42560045D5AB /* Core Data */,
+				20266D071ECD38CA0045D5AB /* Ferries In Class */,
+				20266D1E1ECD38CB0045D5AB /* Ferries In ClassTests */,
+				20266D291ECD38CB0045D5AB /* Ferries In ClassUITests */,
+				20266D061ECD38CA0045D5AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20266D061ECD38CA0045D5AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20266D051ECD38CA0045D5AB /* Ferries In Class.app */,
+				20266D1B1ECD38CB0045D5AB /* Ferries In ClassTests.xctest */,
+				20266D261ECD38CB0045D5AB /* Ferries In ClassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20266D071ECD38CA0045D5AB /* Ferries In Class */ = {
+			isa = PBXGroup;
+			children = (
+				20266D081ECD38CA0045D5AB /* AppDelegate.swift */,
+				20266D0E1ECD38CA0045D5AB /* Main.storyboard */,
+				20C89D3F1ED7F0FE00ABA0D5 /* FerriesMapController.swift */,
+				2084A5F81EDEA6260085CF2D /* VesselAnnotation.swift */,
+				20266D501ECD4D1C0045D5AB /* VesselsTableViewController.swift */,
+				20C89D411EDE6ED900ABA0D5 /* FerryClassesTableViewController.swift */,
+				20C89D3D1ED7E86C00ABA0D5 /* SectionedVesselsTableViewController.swift */,
+				20C89D3B1ED6CADE00ABA0D5 /* PositionReportsTableViewController.swift */,
+				20266D521ECD512A0045D5AB /* DebugViewController.swift */,
+				20266D111ECD38CA0045D5AB /* Assets.xcassets */,
+				20266D131ECD38CA0045D5AB /* LaunchScreen.storyboard */,
+				20266D161ECD38CA0045D5AB /* Info.plist */,
+			);
+			path = "Ferries In Class";
+			sourceTree = "<group>";
+		};
+		20266D1E1ECD38CB0045D5AB /* Ferries In ClassTests */ = {
+			isa = PBXGroup;
+			children = (
+				20266D1F1ECD38CB0045D5AB /* Ferries_In_ClassTests.swift */,
+				20266D211ECD38CB0045D5AB /* Info.plist */,
+			);
+			path = "Ferries In ClassTests";
+			sourceTree = "<group>";
+		};
+		20266D291ECD38CB0045D5AB /* Ferries In ClassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20266D2A1ECD38CB0045D5AB /* Ferries_In_ClassUITests.swift */,
+				20266D2C1ECD38CB0045D5AB /* Info.plist */,
+			);
+			path = "Ferries In ClassUITests";
+			sourceTree = "<group>";
+		};
+		20266D4B1ECD42560045D5AB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				20266D4C1ECD48A40045D5AB /* FerriesCoreDataStack.swift */,
+				20266D381ECD39590045D5AB /* Ferries.xcdatamodeld */,
+				20266D3B1ECD42380045D5AB /* FerryClass+CoreDataClass.swift */,
+				20C89D391ED6C59800ABA0D5 /* FerryClass+CoreDataProperties.swift */,
+				20266D581ED6AF090045D5AB /* FerryClass.swift */,
+				20266D3D1ECD42380045D5AB /* Vessel+CoreDataClass.swift */,
+				20266D3E1ECD42380045D5AB /* Vessel+CoreDataProperties.swift */,
+				20266D561ED678380045D5AB /* Vessel.swift */,
+				20266D3F1ECD42380045D5AB /* PositionReport+CoreDataClass.swift */,
+				20266D401ECD42380045D5AB /* PositionReport+CoreDataProperties.swift */,
+				20C89D471EDE8B2500ABA0D5 /* PositionReport.swift */,
+				20266D411ECD42380045D5AB /* Detail+CoreDataClass.swift */,
+				20266D421ECD42380045D5AB /* Detail+CoreDataProperties.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20266D041ECD38CA0045D5AB /* Ferries In Class */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20266D2F1ECD38CB0045D5AB /* Build configuration list for PBXNativeTarget "Ferries In Class" */;
+			buildPhases = (
+				20266D011ECD38CA0045D5AB /* Sources */,
+				20266D021ECD38CA0045D5AB /* Frameworks */,
+				20266D031ECD38CA0045D5AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ferries In Class";
+			productName = "Ferries In Class";
+			productReference = 20266D051ECD38CA0045D5AB /* Ferries In Class.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20266D1A1ECD38CB0045D5AB /* Ferries In ClassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20266D321ECD38CB0045D5AB /* Build configuration list for PBXNativeTarget "Ferries In ClassTests" */;
+			buildPhases = (
+				20266D171ECD38CB0045D5AB /* Sources */,
+				20266D181ECD38CB0045D5AB /* Frameworks */,
+				20266D191ECD38CB0045D5AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20266D1D1ECD38CB0045D5AB /* PBXTargetDependency */,
+			);
+			name = "Ferries In ClassTests";
+			productName = "Ferries In ClassTests";
+			productReference = 20266D1B1ECD38CB0045D5AB /* Ferries In ClassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20266D251ECD38CB0045D5AB /* Ferries In ClassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20266D351ECD38CB0045D5AB /* Build configuration list for PBXNativeTarget "Ferries In ClassUITests" */;
+			buildPhases = (
+				20266D221ECD38CB0045D5AB /* Sources */,
+				20266D231ECD38CB0045D5AB /* Frameworks */,
+				20266D241ECD38CB0045D5AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20266D281ECD38CB0045D5AB /* PBXTargetDependency */,
+			);
+			name = "Ferries In ClassUITests";
+			productName = "Ferries In ClassUITests";
+			productReference = 20266D261ECD38CB0045D5AB /* Ferries In ClassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20266CFD1ECD38CA0045D5AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hal Mueller";
+				TargetAttributes = {
+					20266D041ECD38CA0045D5AB = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					20266D1A1ECD38CB0045D5AB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = TW8SJXYFP5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20266D041ECD38CA0045D5AB;
+					};
+					20266D251ECD38CB0045D5AB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = TW8SJXYFP5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20266D041ECD38CA0045D5AB;
+					};
+				};
+			};
+			buildConfigurationList = 20266D001ECD38CA0045D5AB /* Build configuration list for PBXProject "Ferries In Class" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20266CFC1ECD38CA0045D5AB;
+			productRefGroup = 20266D061ECD38CA0045D5AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20266D041ECD38CA0045D5AB /* Ferries In Class */,
+				20266D1A1ECD38CB0045D5AB /* Ferries In ClassTests */,
+				20266D251ECD38CB0045D5AB /* Ferries In ClassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20266D031ECD38CA0045D5AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20266D151ECD38CA0045D5AB /* LaunchScreen.storyboard in Resources */,
+				20266D121ECD38CA0045D5AB /* Assets.xcassets in Resources */,
+				20266D101ECD38CA0045D5AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20266D191ECD38CB0045D5AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20266D241ECD38CB0045D5AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20266D011ECD38CA0045D5AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20266D4A1ECD42380045D5AB /* Detail+CoreDataProperties.swift in Sources */,
+				20266D491ECD42380045D5AB /* Detail+CoreDataClass.swift in Sources */,
+				20266D471ECD42380045D5AB /* PositionReport+CoreDataClass.swift in Sources */,
+				2084A5F91EDEA6260085CF2D /* VesselAnnotation.swift in Sources */,
+				20C89D421EDE6ED900ABA0D5 /* FerryClassesTableViewController.swift in Sources */,
+				20266D451ECD42380045D5AB /* Vessel+CoreDataClass.swift in Sources */,
+				20266D481ECD42380045D5AB /* PositionReport+CoreDataProperties.swift in Sources */,
+				20C89D401ED7F0FE00ABA0D5 /* FerriesMapController.swift in Sources */,
+				20266D591ED6AF090045D5AB /* FerryClass.swift in Sources */,
+				20266D571ED678380045D5AB /* Vessel.swift in Sources */,
+				20266D091ECD38CA0045D5AB /* AppDelegate.swift in Sources */,
+				20266D511ECD4D1C0045D5AB /* VesselsTableViewController.swift in Sources */,
+				20266D531ECD512A0045D5AB /* DebugViewController.swift in Sources */,
+				20C89D481EDE8B2500ABA0D5 /* PositionReport.swift in Sources */,
+				20266D4D1ECD48A40045D5AB /* FerriesCoreDataStack.swift in Sources */,
+				20266D3A1ECD39590045D5AB /* Ferries.xcdatamodeld in Sources */,
+				20266D431ECD42380045D5AB /* FerryClass+CoreDataClass.swift in Sources */,
+				20C89D3E1ED7E86C00ABA0D5 /* SectionedVesselsTableViewController.swift in Sources */,
+				20C89D3C1ED6CADE00ABA0D5 /* PositionReportsTableViewController.swift in Sources */,
+				20266D461ECD42380045D5AB /* Vessel+CoreDataProperties.swift in Sources */,
+				20C89D3A1ED6C59900ABA0D5 /* FerryClass+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20266D171ECD38CB0045D5AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20266D201ECD38CB0045D5AB /* Ferries_In_ClassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20266D221ECD38CB0045D5AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20266D2B1ECD38CB0045D5AB /* Ferries_In_ClassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20266D1D1ECD38CB0045D5AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20266D041ECD38CA0045D5AB /* Ferries In Class */;
+			targetProxy = 20266D1C1ECD38CB0045D5AB /* PBXContainerItemProxy */;
+		};
+		20266D281ECD38CB0045D5AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20266D041ECD38CA0045D5AB /* Ferries In Class */;
+			targetProxy = 20266D271ECD38CB0045D5AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20266D0E1ECD38CA0045D5AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20266D0F1ECD38CA0045D5AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20266D131ECD38CA0045D5AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20266D141ECD38CA0045D5AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20266D2D1ECD38CB0045D5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20266D2E1ECD38CB0045D5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20266D301ECD38CB0045D5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Ferries In Class/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Ferries-In-Class";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20266D311ECD38CB0045D5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Ferries In Class/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Ferries-In-Class";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		20266D331ECD38CB0045D5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TW8SJXYFP5;
+				INFOPLIST_FILE = "Ferries In ClassTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Ferries-In-ClassTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ferries In Class.app/Ferries In Class";
+			};
+			name = Debug;
+		};
+		20266D341ECD38CB0045D5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TW8SJXYFP5;
+				INFOPLIST_FILE = "Ferries In ClassTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Ferries-In-ClassTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ferries In Class.app/Ferries In Class";
+			};
+			name = Release;
+		};
+		20266D361ECD38CB0045D5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TW8SJXYFP5;
+				INFOPLIST_FILE = "Ferries In ClassUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Ferries-In-ClassUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Ferries In Class";
+			};
+			name = Debug;
+		};
+		20266D371ECD38CB0045D5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TW8SJXYFP5;
+				INFOPLIST_FILE = "Ferries In ClassUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Ferries-In-ClassUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Ferries In Class";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20266D001ECD38CA0045D5AB /* Build configuration list for PBXProject "Ferries In Class" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20266D2D1ECD38CB0045D5AB /* Debug */,
+				20266D2E1ECD38CB0045D5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20266D2F1ECD38CB0045D5AB /* Build configuration list for PBXNativeTarget "Ferries In Class" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20266D301ECD38CB0045D5AB /* Debug */,
+				20266D311ECD38CB0045D5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20266D321ECD38CB0045D5AB /* Build configuration list for PBXNativeTarget "Ferries In ClassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20266D331ECD38CB0045D5AB /* Debug */,
+				20266D341ECD38CB0045D5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20266D351ECD38CB0045D5AB /* Build configuration list for PBXNativeTarget "Ferries In ClassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20266D361ECD38CB0045D5AB /* Debug */,
+				20266D371ECD38CB0045D5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20266D381ECD39590045D5AB /* Ferries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20266D391ECD39590045D5AB /* Ferries.xcdatamodel */,
+			);
+			currentVersion = 20266D391ECD39590045D5AB /* Ferries.xcdatamodel */;
+			name = Ferries.xcdatamodeld;
+			path = "Core Data Ferries/Ferries.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20266CFD1ECD38CA0045D5AB /* Project object */;
+}
