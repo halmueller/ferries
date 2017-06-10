@@ -76,7 +76,7 @@ class FerriesCoreDataStack {
     
     // TODO: You can get an access code from Washington State DOT at https://www.wsdot.wa.gov/traffic/api/
     // The one below won't work.
-    let accessCode = "xyzzyxyz-zyxy-zzyx-yzzy-xyzzyxyzzyxy"
+    let accessCode = // "xyzzyxyz-zyxy-zzyx-yzzy-xyzzyxyzzyxy"
     
     func updatePositionsData () {
         announce("positions update")
