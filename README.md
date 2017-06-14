@@ -17,7 +17,7 @@ AVSpeechUtterance is used from FerriesCoreDataStack to announce background netwo
 
 ReplayKit capture is triggered from the Debug view controller.
 
-Slides: https://github.com/halmueller/ferriesAbusing%20Game%20Technologies%20for%20Testing%20and%20Debugging.pdf
+Slides: https://github.com/halmueller/ferries/Abusing%20Game%20Technologies%20for%20Testing%20and%20Debugging.pdf
 
 
 
